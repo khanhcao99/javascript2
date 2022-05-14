@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 8:-->
+<!--<input type="button" value="Ấn để chơi" onclick="playgame()">-->
+
+</body>
+<script>
+    // Bài 1:Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.
+    // let i
+    // for (i = 0; i<100; i++){
+    //     console.log(i)
+    // }
+    //     alert("đã hoàn thành")
+
+    // // Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.
+    // for (;a=true;){
+    //     let a = prompt("nhập nhiệt độ hiện tại")
+    //     if (a > 100) {
+    //         alert("Giảm nhiệt độ")
+    //     } else if (a < 20) {
+    //         alert("Tăng nhiệt độ ")
+    //     }else {
+    //         alert("Nhiệt độ là:" + " " + a);
+    //     }
+    // }
+
+    // Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.
+    // const number = parseInt(prompt('Enter the number of terms: '));
+    // var n1 = 0
+    // var n2 = 1
+    // var fbn
+    // for ( i = 0; i < number ; i++) {
+    //     document.write(n1 + "<br>");
+    //     fbn = n1 +n2;
+    //     n1 = n2;
+    //     n2 = fbn
+    // }
+    // Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci.
+    // Tạo các biến với các giá trị, n1, n2, fbn, sum
+    // const number = parseInt(prompt('Enter the number of terms: '));
+    // var n1 = 0
+    // var n2 = 1
+    // var fbn
+    // var sum = 0
+    // // trong đó n1 n2 là 2 số fbn đầu tiên, sum là tổng các số fbn trong dãy
+    // for (i = 0; i < number; i++) {
+    //     fbn = n1 + n2;
+    //     console.log(n1)
+    //     sum += n1
+    //     n1 = n2;
+    //     n2 = fbn
+    // }
+    // document.write(sum)
+
+    // Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+    // let sum = 0
+    // let count = 0
+    // for (let i = 0; count <= 29; i++) {
+    //
+    //     if (i % 7 == 0) {
+    //         sum += i
+    //         count++
+    //     }
+    // }
+    // document.write(sum)
+
+    // Bài 7: Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
+    //     Học viên tham khảo ứng dụng demo tại
+    // let i
+    // for (i = 1; i <= 100; i++) {
+    //     if (i % 3 == 0 && i % 5 !== 0) {
+    //         document.write("Fizz" + "<br>")
+    //         continue;
+    //     } else if (i % 3 !== 0 && i % 5 == 0) {
+    //         document.write("Buzz" + "<br>")
+    //         continue;
+    //     } else if (i % 3 == 0 && i % 5 == 0) {
+    //         document.write("FizzBuzz" + "<br>")
+    //         continue;
+    //     }
+    //     document.write(i + "<br>")
+    // }
+
+    // Bài 8: Game đoán số
+    // function doanso() {
+    //     let number = +prompt("Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?")
+    //     let number_ran = Math.floor(Math.random() * number);
+    //     console.log(number_ran);
+    //     let number_check = +prompt ("Nhập số bạn đoán");
+    //     let count = 0;
+    //     while (number_check !== number_ran) {
+    //         count++;
+    //         if (count == 4) {
+    //             alert("Bạn hết số lần đoán")
+    //             break;
+    //         } else if (number_check < number_ran) {
+    //             alert("Số bạn đoán bé hơn");
+    //         } else {
+    //             alert ("Số bạn đoán lớn hơn")
+    //         }
+    //         number_check = prompt ("Nhập số bạn đoán");
+    //     }
+    //     if (count == 4) {
+    //         document.write("Bạn hết số lần đoán")
+    //     } else {
+    //         document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
+    //     }
+    // }
+
+</script>
+</html>
