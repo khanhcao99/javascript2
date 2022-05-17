@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập từ bạn cần tra:</p><br>
+<input type="text" id="tran">
+<input type="button" onclick="sreach()" value="Dịch">
+<p id="result1"></p>
+
+</body>
+<script>
+    function sreach() {
+        let a_eng = ["banana", "apple", "orange", "pen", "pencil", "book"]
+        let a_vn = ["chuối", "táo", "cam", "bút", "bút chì", "sách"]
+        let tu_tra = document.getElementById("tran").value
+        let flag = false
+        for (let i = 0; i < a_eng.length; i++) {
+            if (tu_tra == a_eng[i]) {
+                document.getElementById("result1").innerHTML = a_vn[i]
+                flag = true
+                break
+            }
+            if (tu_tra == a_vn[i]){
+                document.getElementById("result1").innerHTML = a_eng[i]
+                flag = true
+                break
+            }
+            if (!flag)
+                document.getElementById("result1").innerHTML = " Không tìm thấy từ tra cứu"
+        }
+    }
+</script>
+</html>
