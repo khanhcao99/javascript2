@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+           oninput="temperatureConverter(this.value)"
+           onchange="temperatureConverter(this.value)">
+</p>
+
+<p>Celsius: <span id="outputCelsius"></span></p>
+
+<p>
+    <lable>Bình phương của 1 số</lable>
+    <input type="number"
+           oninput="chuyendoi(this.value)"
+           onchange="chuyendoi(this.value)" placeholder="Bình phương">
+</p>
+<p>Bình phương của số  <span id="result"><gi/span></p>
+</body>
+<script>
+    function temperatureConverter(valNum) {
+        // valNum = parseFloat(valNum);
+        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+    }
+
+    function chuyendoi(number) {
+        document.getElementById("result").innerHTML =  + number + " là: " + number*number
+    }
+</script>
+</html>
