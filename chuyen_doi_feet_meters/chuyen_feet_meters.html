@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function footToMeter(foot) {
+        let meter = 0.305 * foot;
+        return meter;
+    }
+
+    function meterToFoot(meter) {
+        let foot = 3.279 * meter;
+        return foot;
+    }
+    let foot = +prompt("Nhập số bước chân")
+    let meter = +prompt("Nhập vào số meters")
+    let result1 = footToMeter(foot)
+    let result2 = meterToFoot(meter)
+    document.write(foot + " bước chân " + " = " + result1 + " meter")
+    document.write("<br>")
+    document.write(meter + " meter " + " = " + result2 + " bước chân ")
+</script>
+</html>
