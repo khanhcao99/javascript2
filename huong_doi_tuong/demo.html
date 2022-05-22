@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+
+</body>
+<script>
+    // function student(id, name, address) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.address = address;
+    //     this.getInfor = function () {
+    //         return "id: " + this.id + " name: " + this.name + " address: " + this.address;
+    //     }
+    // }
+    // var student = new student(1999, "Cao Quốc Khánh", "Sóc Sơn")
+    // document.write(student.getInfor())
+    // document.write("<br>" + student.id )
+    // document.write("<br>" + student.name)
+    // document.write("<br>" + student.address)
+
+    // let person = {
+    //     name: ['Bob', 'Smith'],
+    //     age: 32,
+    //     gender: 'male',
+    //     interests: ['music', 'skiing'],
+    //     bio: function() {
+    //         alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+    //     },
+    //     greeting: function() {
+    //         alert('Hi! I\'m ' + this.name[0] + '.');
+    //     }
+    // };
+    // person.bio();
+
+    // let apple = {
+    //     type: "macintosh",
+    //     color: "red",
+    //     getInfo: function () {
+    //         return this.color + ' ' + this.type + ' apple';
+    //     }
+    // }
+    // apple.color = "reddish";
+    // alert(apple.getInfo());
+
+    // Chúng ta sử dụng phương thức lineTo() để vẽ một đường thẳng.
+    // var c = document.getElementById("myCanvas");
+    // var ctx = c.getContext("2d");
+    // ctx.moveTo(0,0);
+    // ctx.lineTo(200,100);
+    // ctx.stroke();
+
+    // Chúng ta sử dụng phương thức arc() để vẽ một đường tròn.
+    // var c = document.getElementById("myCanvas");
+    // var ctx = c.getContext("2d");
+    // ctx.beginPath();
+    // ctx.arc(95,50,40,0,2*Math.PI);
+    // ctx.stroke();
+
+    // Chúng ta sử dụng phương thức fillText() hoặc strokeText() để vẽ chữ.
+    // var c = document.getElementById("myCanvas");
+    // var ctx = c.getContext("2d");
+    // ctx.font = "30px Arial";
+    // ctx.fillText("Hello World",10,50);
+
+    // Chúng ta sử dụng phương thức createLinearGradient(), addColorStop() để tạo hiệu ứng gradient.
+    // var c = document.getElementById("myCanvas");
+    // var ctx = c.getContext("2d");
+
+    // Create gradient
+    // var grd = ctx.createLinearGradient(0,0,200,0);
+    // grd.addColorStop(0,"red");
+    // grd.addColorStop(1,"white");
+
+    // Fill with gradient
+    // ctx.fillStyle = grd;
+    // ctx.fillRect(10,10,150,80);
+
+    // Chúng ta sử dụng phương thức createRadialGradient() để tạo hiệu ứng gradient tròn.
+    // var c = document.getElementById("myCanvas");
+    // var ctx = c.getContext("2d");
+
+    // Create gradient
+    // var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+    // grd.addColorStop(0,"red");
+    // grd.addColorStop(1,"white");
+
+    // Fill with gradient
+    // ctx.fillStyle = grd;
+    // ctx.fillRect(10,10,150,80);
+</script>
+</html>
