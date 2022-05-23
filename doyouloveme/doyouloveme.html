@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            position: relative;
+            left: 650px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<button id="yes">Yes</button>
+<button id="no">No</button>
+
+
+</body>
+<script>
+    document.getElementById('yes').onclick = function () {
+        noti()
+    }
+
+    function noti() {
+        alert("Yes, i do love you")
+    }
+
+    document.getElementById('no').onmouseover = function () {
+        reject()
+    }
+
+    function reject() {
+        let width = Math.random() * window.innerWidth
+        let height = Math.random() * window.innerHeight
+        document.getElementById('no').style.left = width + 'px'
+        document.getElementById('no').style.top = height + 'px'
+
+    }
+</script>
+</html>
