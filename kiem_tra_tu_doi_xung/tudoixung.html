@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="doixung()">Bắt đầu</button>
+</body>
+<script>
+    function isPalindrome(array) {
+        // Kiểm tra xem ký tự đầu tiên và ký tự cuối cùng của chuỗi có bằng nhau.
+        if (array[0] == array[array.length - 1]) {
+            return true
+        } else {
+            return false;
+        }
+        // Bỏ qua hai ký tự đầu và cuối, kiểm tra xem phần còn lại của chuỗi con là một palindrome.
+        let j = array.length - 2
+        for (let i = 1; i < j; i++) {
+            if (array[i] == array[j]) {
+                return true
+                j--
+            } else {
+                return false
+            }
+        }
+    }
+
+    function doixung() {
+        let array = prompt("Nhập vào ký tự để kiểm tra đối xứng")
+        console.log(isPalindrome(array))
+    }
+</script>
+</html>
