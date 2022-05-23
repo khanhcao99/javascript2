@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div><img id="img1" alt="a" src="1-1639135334.jpg" width="600" height="120" onclick="changeImg(this)"></div>
+    <div><img id="img2" alt="a" src="anh-dong-vat-khi-dong-vat-dien-sau-hon-ca-con-nguoi.jpg" width="600" height="120" onclick="changeImg1(this)"></div>
+    <div><img id="img3" alt="a" src="hinh-anh-dong-vat-sinh-dong-de-thuong-hinhanhonline-0.jpg"  width="600" height="120" onclick="changeImg2(this)"></div>
+    <div><img id="img4" alt="a" src="The-Gioi-Dong-Vat-7.jpg" width="600" height="120" onclick="changeImg3(this)"></div>
+    <div><img id="img5" alt="a" src="trang-web-ghep-hinh-vui-nhon-600x480.jpg" width="600" height="120" onclick="changeImg4(this)"></div>
+</div>
+
+</body>
+<script>
+    let img1 = 0;
+    let img2 = 2;
+    let img3 = 1;
+    let img4 = 2;
+    let img5 = 0;
+
+    function changeImg(image) {
+        img1++;
+        image.src = "ảnh/first" + img1 + ".jpg";
+        if (img1 >= 3) {
+            img1 = 0;
+        }
+        checkWin()
+    }
+
+    function changeImg1(image) {
+        img2++;
+        image.src = "ảnh/two" + img2 + ".jpg";
+        if (img2 >= 3) {
+            img2 = 0;
+        }
+        checkWin()
+    }
+
+    function changeImg2(image) {
+        img3++;
+        image.src = "ảnh/three" + img3 + ".jpg";
+        if (img3 >= 3) {
+            img3 = 0;
+        }
+        checkWin()
+    }
+
+    function changeImg3(image) {
+        img4++;
+        image.src = "ảnh/four" + img4 + ".jpg";
+        if (img4 >= 3) {
+            img4 = 0;
+        }
+        checkWin()
+    }
+
+    function changeImg4(image) {
+        img5++;
+        image.src = "ảnh/five" + img5 + ".jpg";
+        if (img5 >= 3) {
+            img5 = 0;
+        }
+        checkWin()
+    }
+
+    function checkWin() {
+        let check = (img1 === img2 && img2 === img3 && img3 === img4 && img4 === img5);
+        if (check) {
+            alert("You win!")
+        }
+    }
+</script>
+</html>
